@@ -4,30 +4,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trovador El Turco</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;background:#080808;color:white;font-family:Arial,sans-serif}
-header{padding:20px;text-align:center;background:#111;border-bottom:2px solid #d6ad55}
-header h2{color:#e5c16b;letter-spacing:3px;margin:0}
-nav{padding:15px;text-align:center}
-nav a{color:#e5c16b;text-decoration:none;margin:10px;font-size:14px}
-.hero{text-align:center;padding:100px 20px;background:linear-gradient(135deg,#080808,#38280e,#080808)}
-.hero h1{font-family:Georgia,serif;font-size:48px;color:#e5c16b;margin:10px}
-.hero p{font-size:18px;line-height:1.6}
-h2{color:#e5c16b}
-.btn{display:inline-block;background:#d6ad55;color:#111;padding:14px 25px;text-decoration:none;font-weight:bold;border-radius:5px;margin-top:15px}
-section{text-align:center;padding:60px 20px}
-.servicios{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
-.tarjeta{background:#171717;border:1px solid #a47b30;padding:25px;border-radius:10px;width:260px}
-.tarjeta h3{color:#e5c16b}
-.contacto{background:#17120b}
-footer{text-align:center;padding:25px;background:#080808;color:#aaa}
-</style>
-</head>
-<body>
 
-{
+<title>Trovador El Turco | Trova, Música y Humor</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+
+header {
     background: #000;
     text-align: center;
     padding: 15px;
@@ -35,59 +35,485 @@ footer{text-align:center;padding:25px;background:#080808;color:#aaa}
 }
 
 .logo {
-    width: 220px;
+    width: 230px;
     max-width: 90%;
     height: auto;
     display: block;
     margin: auto;
 }
 
+/* MENU */
+
+nav {
+    background: #111;
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: #e5c16b;
+    text-decoration: none;
+    margin: 0 13px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* INICIO */
+
+.hero {
+    text-align: center;
+    padding: 85px 20px;
+    background: radial-gradient(
+        ellipse at center,
+        #493516,
+        #171006 55%,
+        #080808
+    );
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 7vw, 65px);
+    color: #e5c16b;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #f4d98d, #b88932);
+    color: #080808;
+    padding: 14px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #fff0b7;
+}
+
+/* SECCIONES */
+
+section {
+    padding: 65px 7%;
+}
+
+.titulo {
+    color: #e5c16b;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 4vw, 40px);
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 35px;
+    color: #ddd;
+    font-size: 17px;
+}
+
+/* BIOGRAFIA */
+
+.biografia {
+    background: #111;
+    text-align: center;
+}
+
+.biografia p {
+    max-width: 900px;
+    margin: auto;
+    color: #ddd;
+    font-size: 18px;
+}
+
+/* SERVICIOS */
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.tarjeta {
+    background: #171717;
+    border: 1px solid #a47b30;
+    border-radius: 12px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 5px 20px #000;
+}
+
+.tarjeta h3 {
+    color: #e5c16b;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+/* GALERIA DE FOTOS Y VIDEOS */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.galeria img,
+.galeria video {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #b88932;
+    background: #080808;
+    object-fit: cover;
+    max-height: 230px;
+}
+
+.subir {
+    display: inline-block;
+    background: #d6ad55;
+    color: #080808;
+    padding: 11px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.subir:hover {
+    background: #f4d98d;
+}
+
+.archivos {
+    display: none;
+}
+
+.aviso {
+    color: #bda36d;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+/* CONTACTO */
+
+.contacto {
+    background: radial-gradient(circle, #342510, #080808);
+    text-align: center;
+}
+
+.telefono {
+    color: #f4d98d;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    background: #000;
+    border-top: 2px solid #b88932;
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+}
+
+.whatsapp-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #20c767;
+    color: #000;
+    padding: 14px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 20;
+}
+
+/* CELULARES */
+
+@media(max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 7px;
+        font-size: 13px;
+    }
+
+    section {
+        padding: 45px 18px;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ENCABEZADO CON LOGO -->
+
+<header>
+    <img src="./logo-trovador.png"
+         alt="Logo El Turco"
+         class="logo">
+</header>
+
+<!-- MENU -->
+
 <nav>
-<a href="#inicio">INICIO</a>
-<a href="#sobre">SOBRE MÍ</a>
-<a href="#servicios">SERVICIOS</a>
-<a href="#contacto">CONTACTO</a>
+    <a href="#inicio">INICIO</a>
+    <a href="#sobre">SOBRE MÍ</a>
+    <a href="#servicios">SERVICIOS</a>
+    <a href="#contacto">CONTACTO</a>
 </nav>
 
+<!-- INICIO -->
+
 <section class="hero" id="inicio">
-<h1>TROVADOR<br>EL TURCO</h1>
-<p>La música, el sentimiento y la alegría<br>para tus momentos especiales.</p>
-<a class="btn" href="https://wa.me/573504008268" target="_blank">CONTÁCTAME POR WHATSAPP</a>
+
+    <h1>TROVADOR EL TURCO</h1>
+
+    <p>
+        TROVA, MÚSICA Y HUMOR<br>
+        Alegría, talento y sentimiento para tus eventos.
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/573504008268"
+       target="_blank">
+       CONTRATACIONES POR WHATSAPP
+    </a>
+
 </section>
 
-<section id="sobre">
-<h2>BIENVENIDOS</h2>
-<p>Soy Trovador El Turco. Llevo música, alegría y sentimiento a tus celebraciones y eventos especiales.</p>
+<!-- BIOGRAFIA -->
+
+<section class="biografia" id="sobre">
+
+    <h2 class="titulo">CONOCE AL TURCO</h2>
+
+    <p>
+        Freyder J. Findley G. (El Turco).
+
+        Artista plástico y publicista de profesión,
+        trovador de vocación. Ha trabajado en importantes
+        programas radiales de diferentes emisoras
+        de la ciudad de Cali.
+
+        Se caracteriza por su interacción y conexión
+        con el público, desde el primer momento.
+
+        Trovador sarcástico, picante, manejador del
+        doble sentido, conservando siempre la línea
+        del respeto con el show.
+    </p>
+
 </section>
+
+<!-- SERVICIOS Y GALERIAS -->
 
 <section id="servicios">
-<h2>MIS SERVICIOS</h2>
-<div class="servicios">
-<div class="tarjeta">
-<h3>♫ Música en vivo</h3>
-<p>Música y entretenimiento para disfrutar y compartir.</p>
-</div>
-<div class="tarjeta">
-<h3>★ Eventos privados</h3>
-<p>Una presentación especial para tus reuniones.</p>
-</div>
-<div class="tarjeta">
-<h3>♪ Celebraciones</h3>
-<p>Haz de tus fechas especiales momentos inolvidables.</p>
-</div>
-</div>
+
+    <h2 class="titulo">MIS SERVICIOS</h2>
+
+    <p class="descripcion">
+        Música, humor y entretenimiento para
+        tus mejores celebraciones.
+    </p>
+
+    <div class="servicios">
+
+        <!-- SERVICIO 1 -->
+
+        <div class="tarjeta">
+
+            <h3>♫ Música en vivo</h3>
+
+            <p>
+                Presentaciones musicales,
+                trova y entretenimiento.
+            </p>
+
+            <div class="galeria" id="galeria1"></div>
+
+            <label class="subir">
+                + Agregar fotos y videos
+                <input class="archivos"
+                       type="file"
+                       accept="image/*,video/*"
+                       multiple
+                       onchange="mostrarArchivos(this,'galeria1')">
+            </label>
+
+            <p class="aviso">
+                Selecciona tus fotografías y videos.
+            </p>
+
+        </div>
+
+        <!-- SERVICIO 2 -->
+
+        <div class="tarjeta">
+
+            <h3>★ Eventos privados</h3>
+
+            <p>
+                Shows especiales para reuniones,
+                fiestas y encuentros.
+            </p>
+
+            <div class="galeria" id="galeria2"></div>
+
+            <label class="subir">
+                + Agregar fotos y videos
+                <input class="archivos"
+                       type="file"
+                       accept="image/*,video/*"
+                       multiple
+                       onchange="mostrarArchivos(this,'galeria2')">
+            </label>
+
+            <p class="aviso">
+                Selecciona tus fotografías y videos.
+            </p>
+
+        </div>
+
+        <!-- SERVICIO 3 -->
+
+        <div class="tarjeta">
+
+            <h3>♪ Celebraciones</h3>
+
+            <p>
+                Cumpleaños, fiestas y ocasiones
+                especiales.
+            </p>
+
+            <div class="galeria" id="galeria3"></div>
+
+            <label class="subir">
+                + Agregar fotos y videos
+                <input class="archivos"
+                       type="file"
+                       accept="image/*,video/*"
+                       multiple
+                       onchange="mostrarArchivos(this,'galeria3')">
+            </label>
+
+            <p class="aviso">
+                Selecciona tus fotografías y videos.
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
+
+<!-- CONTACTO -->
 
 <section class="contacto" id="contacto">
-<h2>CONTRATACIONES</h2>
-<p>Comunícate conmigo y reserva tu presentación.</p>
-<h2>350 400 8268</h2>
-<a class="btn" href="https://wa.me/573504008268" target="_blank">ESCRIBIR POR WHATSAPP</a>
+
+    <h2 class="titulo">¡CONTRATA AL TURCO!</h2>
+
+    <p class="descripcion">
+        Lleva la trova, la música y el humor
+        a tu próximo evento.
+    </p>
+
+    <div class="telefono">
+        350 400 8268
+    </div>
+
+    <a class="btn"
+       href="https://wa.me/573504008268?text=Hola%20Turco,%20quiero%20informaci%C3%B3n%20sobre%20una%20presentaci%C3%B3n."
+       target="_blank">
+       ESCRIBIR POR WHATSAPP
+    </a>
+
 </section>
 
+<!-- PIE DE PAGINA -->
+
 <footer>
-© 2026 Trovador El Turco - Todos los derechos reservados
+
+    © 2026 Trovador El Turco<br>
+    Trova, Música y Humor
+
 </footer>
+
+<a class="whatsapp-flotante"
+   href="https://wa.me/573504008268"
+   target="_blank">
+   WhatsApp
+</a>
+
+<!-- FUNCION PARA MOSTRAR FOTOS Y VIDEOS -->
+
+<script>
+
+function mostrarArchivos(input, destino) {
+
+    const galeria = document.getElementById(destino);
+
+    Array.from(input.files).forEach(archivo => {
+
+        const url = URL.createObjectURL(archivo);
+
+        if (archivo.type.startsWith("image/")) {
+
+            const imagen = document.createElement("img");
+
+            imagen.src = url;
+            imagen.alt = archivo.name;
+
+            galeria.appendChild(imagen);
+
+        } else if (archivo.type.startsWith("video/")) {
+
+            const video = document.createElement("video");
+
+            video.src = url;
+            video.controls = true;
+            video.playsInline = true;
+
+            galeria.appendChild(video);
+
+        }
+
+    });
+
+    input.value = "";
+
+}
+
+</script>
 
 </body>
 </html>
