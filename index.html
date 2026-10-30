@@ -13,225 +13,223 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
+    font-family: Arial, sans-serif;
     background: #080808;
     color: white;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
 }
 
 header {
     background: #000;
     text-align: center;
-    padding: 15px;
-    border-bottom: 2px solid #d6ad55;
+    padding: 20px;
+    border-bottom: 2px solid #c9a227;
 }
 
 .logo {
-    width: 230px;
-    max-width: 90%;
+    width: 150px;
+    max-width: 80%;
     height: auto;
-    display: block;
-    margin: auto;
+    margin-bottom: 12px;
+}
+
+header h1 {
+    color: #d4af37;
+    font-size: 30px;
+}
+
+header p {
+    color: white;
+    margin-top: 6px;
 }
 
 nav {
-    background: #111;
-    padding: 18px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    background: #151515;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px 8px;
+    border-bottom: 1px solid #c9a227;
 }
 
 nav a {
-    color: #e5c16b;
+    color: #d4af37;
     text-decoration: none;
-    margin: 0 13px;
     font-weight: bold;
+    padding: 10px 14px;
+    border: 1px solid #c9a227;
+    border-radius: 5px;
 }
 
 nav a:hover {
-    color: white;
-}
-
-.hero {
-    text-align: center;
-    padding: 85px 20px;
-    background: radial-gradient(ellipse at center, #493516, #171006 55%, #080808);
-}
-
-.hero h1 {
-    font-family: Georgia, serif;
-    font-size: clamp(38px, 7vw, 65px);
-    color: #e5c16b;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 19px;
-    margin-bottom: 25px;
-}
-
-.btn {
-    display: inline-block;
-    background: linear-gradient(135deg, #f4d98d, #b88932);
-    color: #080808;
-    padding: 14px 25px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 8px;
-}
-
-section {
-    padding: 65px 7%;
-    scroll-margin-top: 80px;
-}
-
-.titulo {
-    color: #e5c16b;
-    text-align: center;
-    font-family: Georgia, serif;
-    font-size: clamp(28px, 4vw, 40px);
-    margin-bottom: 20px;
-}
-
-.descripcion {
-    text-align: center;
-    max-width: 850px;
-    margin: 0 auto 35px;
-    color: #ddd;
-    font-size: 17px;
-}
-
-.biografia {
-    background: #111;
-    text-align: center;
-}
-
-.biografia p {
-    max-width: 900px;
-    margin: auto;
-    color: #ddd;
-    font-size: 18px;
-}
-
-.servicios {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 25px;
-    max-width: 900px;
-    margin: 30px auto;
-}
-
-.tarjeta {
-    background: #171717;
-    border: 1px solid #a47b30;
-    border-radius: 12px;
-    padding: 30px 22px;
-    text-align: center;
-    box-shadow: 0 5px 20px #000;
-}
-
-.tarjeta h3 {
-    color: #e5c16b;
-    font-size: 25px;
-    margin-bottom: 15px;
-}
-
-.boton-galeria {
-    display: inline-block;
-    background: linear-gradient(135deg, #f4d98d, #b88932);
-    color: #080808;
-    padding: 12px 22px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-}
-
-.boton-galeria:hover {
-    background: #ffffff;
+    background: #d4af37;
+    color: #000;
 }
 
 section[hidden] {
     display: none !important;
 }
 
-.galeria-fotos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
+section {
+    padding: 45px 20px;
+    text-align: center;
+    min-height: 300px;
+}
+
+.hero {
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #080808, #29200b, #080808);
+}
+
+.hero h2 {
+    color: #d4af37;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+h2.titulo {
+    color: #d4af37;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.biografia p,
+.contacto p {
+    max-width: 850px;
+    margin: 12px auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.contenedor-servicios,
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
     max-width: 1100px;
     margin: 30px auto;
 }
 
-.galeria-fotos img {
-    width: 100%;
+.tarjeta {
+    background: #171717;
+    border: 1px solid #c9a227;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 280px;
+}
+
+.tarjeta h3 {
+    color: #d4af37;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    margin-bottom: 20px;
+}
+
+.boton-galeria,
+.boton-volver {
+    display: inline-block;
+    background: #d4af37;
+    color: #000;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.boton-galeria:hover,
+.boton-volver:hover {
+    background: #fff;
+}
+
+.galeria img {
+    width: 300px;
+    max-width: 100%;
     height: 230px;
     object-fit: cover;
-    border-radius: 9px;
-    border: 1px solid #b88932;
+    border: 2px solid #c9a227;
+    border-radius: 10px;
 }
 
 .contacto {
-    background: radial-gradient(circle, #342510, #080808);
-    text-align: center;
+    background: #111;
 }
 
-.telefono {
-    color: #f4d98d;
-    font-size: 30px;
+.whatsapp {
+    display: inline-block;
+    background: #d4af37;
+    color: #000;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 7px;
     font-weight: bold;
-    margin: 20px;
+    margin-top: 20px;
+}
+
+.whatsapp:hover {
+    background: #fff;
 }
 
 footer {
     background: #000;
-    border-top: 2px solid #b88932;
+    color: #d4af37;
     text-align: center;
-    padding: 25px;
-    color: #aaa;
+    padding: 22px;
+    border-top: 1px solid #c9a227;
+    line-height: 1.7;
 }
 
 .whatsapp-flotante {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #20c767;
-    color: #000;
-    padding: 14px 20px;
-    border-radius: 30px;
+    background: #25d366;
+    color: white;
     text-decoration: none;
     font-weight: bold;
-    z-index: 20;
+    padding: 14px 18px;
+    border-radius: 50px;
+    z-index: 1000;
+    box-shadow: 0 3px 12px #000;
 }
 
-@media(max-width:600px) {
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    nav {
+        gap: 7px;
+    }
+
     nav a {
-        display: inline-block;
-        margin: 7px;
+        padding: 9px 10px;
         font-size: 13px;
     }
 
-    section {
-        padding: 45px 18px;
-    }
-
-    .hero {
-        padding: 60px 15px;
-    }
-
-    .galeria-fotos img {
-        height: 200px;
+    .galeria img {
+        width: 100%;
+        height: auto;
     }
 }
 </style>
@@ -240,64 +238,62 @@ footer {
 <body>
 
 <header>
-    <img src="./TURCO.png" alt="Logo El Turco" class="logo">
+    <img src="./TURCO.png" alt="Logo Trovador El Turco" class="logo">
+    <h1>TROVADOR EL TURCO</h1>
+    <p>Trova, Música y Humor</p>
 </header>
 
 <nav>
-    <a href="#inicio">INICIO</a>
-    <a href="#sobre">SOBRE MÍ</a>
-    <a href="#servicios" onclick="volverServicios(); return false;">SERVICIOS</a>
-    <a href="#contacto">CONTACTO</a>
+    <a href="#" onclick="mostrarPagina('inicio'); return false;">INICIO</a>
+    <a href="#" onclick="mostrarPagina('sobre'); return false;">SOBRE MÍ</a>
+    <a href="#" onclick="mostrarPagina('servicios'); return false;">SERVICIOS</a>
+    <a href="#" onclick="mostrarPagina('contacto'); return false;">CONTACTO</a>
 </nav>
 
+<!-- INICIO -->
 <section class="hero" id="inicio">
-    <h1>TROVADOR EL TURCO</h1>
-    <p>
-        TROVA, MÚSICA Y HUMOR<br>
-        Alegría, talento y sentimiento para tus eventos.
-    </p>
-    <a class="btn"
-       href="https://wa.me/573504008268"
-       target="_blank">
-       CONTRATACIONES POR WHATSAPP
-    </a>
+    <h2>TROVA, MÚSICA Y HUMOR</h2>
+    <p>Alegría, talento y sentimiento para tus eventos.</p>
 </section>
 
-<section class="biografia" id="sobre">
-    <h2 class="titulo">CONOCE AL TURCO</h2>
+<!-- SOBRE MÍ -->
+<section class="biografia" id="sobre" hidden>
+    <h2 class="titulo">SOBRE MÍ</h2>
+
     <p>
-        Freyder J. Findley G. (El Turco).
-        Artista plástico y publicista de profesión,
-        trovador de vocación. Ha trabajado en importantes
-        programas radiales de diferentes emisoras
-        de la ciudad de Cali.
-        Se caracteriza por su interacción y conexión
-        con el público, desde el primer momento.
-        Trovador sarcástico, picante, manejador del
-        doble sentido, conservando siempre la línea
+        Freyder J. Findley G. (El Turco). Artista plástico y publicista
+        de profesión, trovador de vocación. Ha trabajado en importantes
+        programas radiales de diferentes emisoras de la ciudad de Cali.
+    </p>
+
+    <p>
+        Se caracteriza por su interacción y conexión con el público,
+        desde el primer momento. Trovador sarcástico, picante,
+        manejador del doble sentido, conservando siempre la línea
         del respeto con el show.
     </p>
 </section>
 
-<section id="servicios">
-    <h2 class="titulo">EVENTOS PRIVADOS</h2>
+<!-- SERVICIOS -->
+<section id="servicios" hidden>
+    <h2 class="titulo">MIS SERVICIOS</h2>
 
-    <div class="servicios">
+    <div class="contenedor-servicios">
 
         <div class="tarjeta">
-            <h3>📸 FOTOS</h3>
-            <button class="boton-galeria"
-                    type="button"
-                    onclick="abrirSeccion('fotos')">
+            <h3>FOTOS</h3>
+            <p>Conoce algunos momentos y presentaciones.</p>
+            <button class="boton-galeria" type="button"
+                onclick="abrirSeccion('fotos')">
                 ABRIR CARPETA
             </button>
         </div>
 
         <div class="tarjeta">
-            <h3>🎥 VIDEOS</h3>
-            <button class="boton-galeria"
-                    type="button"
-                    onclick="abrirSeccion('videos')">
+            <h3>VIDEOS</h3>
+            <p>Disfruta de mis presentaciones y shows.</p>
+            <button class="boton-galeria" type="button"
+                onclick="abrirSeccion('videos')">
                 ABRIR CARPETA
             </button>
         </div>
@@ -305,92 +301,96 @@ footer {
     </div>
 </section>
 
+<!-- FOTOS -->
 <section id="fotos" hidden>
-    <h2 class="titulo">FOTOS - EVENTOS PRIVADOS</h2>
+    <h2 class="titulo">GALERÍA DE FOTOS</h2>
 
-    <div class="galeria-fotos">
-        <img src="./1000013506.jpg" alt="Foto de evento privado">
-        <img src="./1000014287.jpg" alt="Foto de evento privado">
-        <img src="./1000029305.jpg" alt="Foto de evento privado">
-        <img src="./1000029313.jpg" alt="Foto de evento privado">
-        <img src="./1000029381.jpg" alt="Foto de evento privado">
+    <div class="galeria">
+        <img src="./1000013506.jpg" alt="Foto de El Turco">
+        <img src="./1000014287.jpg" alt="Foto de El Turco">
+        <img src="./1000029305.jpg" alt="Foto de El Turco">
+        <img src="./1000029313.jpg" alt="Foto de El Turco">
+        <img src="./1000029381.jpg" alt="Foto de El Turco">
     </div>
 
-    <div style="text-align:center">
-        <button class="boton-galeria"
-                type="button"
-                onclick="volverServicios()">
-            VOLVER
-        </button>
-    </div>
+    <button class="boton-volver" type="button"
+        onclick="volverServicios()">
+        VOLVER
+    </button>
 </section>
 
+<!-- VIDEOS -->
 <section id="videos" hidden>
-    <h2 class="titulo">VIDEOS - EVENTOS PRIVADOS</h2>
+    <h2 class="titulo">GALERÍA DE VIDEOS</h2>
 
-    <p class="descripcion">
-        Próximamente nuevos videos.
-    </p>
+    <p>Próximamente nuevos videos.</p>
 
-    <div style="text-align:center">
-        <button class="boton-galeria"
-                type="button"
-                onclick="volverServicios()">
-            VOLVER
-        </button>
-    </div>
+    <button class="boton-volver" type="button"
+        onclick="volverServicios()">
+        VOLVER
+    </button>
 </section>
 
-<section class="contacto" id="contacto">
+<!-- CONTACTO -->
+<section class="contacto" id="contacto" hidden>
     <h2 class="titulo">¡CONTRATA AL TURCO!</h2>
 
-    <p class="descripcion">
-        Lleva la trova, la música y el humor a tu próximo evento.
-    </p>
+    <p>Lleva la trova, la música y el humor a tu próximo evento.</p>
 
-    <div class="telefono">350 400 8268</div>
+    <p><strong>WhatsApp: 350 400 8268</strong></p>
 
-    <a class="btn"
-       href="https://wa.me/573504008268?text=Hola%20Turco,%20quiero%20informaci%C3%B3n%20sobre%20una%20presentaci%C3%B3n."
-       target="_blank">
-       ESCRIBIR POR WHATSAPP
+    <a class="whatsapp"
+       href="https://wa.me/573504008268?text=Hola%20Turco,%20quiero%20información%20sobre%20tus%20servicios."
+       target="_blank" rel="noopener">
+       CONTACTAR POR WHATSAPP
     </a>
 </section>
 
 <footer>
-    © 2026 Trovador El Turco<br>
-    Trova, Música y Humor
+    <p>© 2026 Trovador El Turco</p>
+    <p>Trova, Música y Humor</p>
 </footer>
 
 <a class="whatsapp-flotante"
    href="https://wa.me/573504008268"
-   target="_blank">
+   target="_blank" rel="noopener">
    WhatsApp
 </a>
 
 <script>
-function abrirSeccion(id) {
+function ocultarTodo() {
+    document.getElementById('inicio').hidden = true;
+    document.getElementById('sobre').hidden = true;
     document.getElementById('servicios').hidden = true;
     document.getElementById('fotos').hidden = true;
     document.getElementById('videos').hidden = true;
+    document.getElementById('contacto').hidden = true;
+}
+
+function mostrarPagina(id) {
+    ocultarTodo();
 
     document.getElementById(id).hidden = false;
 
-    document.getElementById(id).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+function abrirSeccion(id) {
+    ocultarTodo();
+
+    document.getElementById(id).hidden = false;
+
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
 }
 
 function volverServicios() {
-    document.getElementById('fotos').hidden = true;
-    document.getElementById('videos').hidden = true;
-    document.getElementById('servicios').hidden = false;
-
-    document.getElementById('servicios').scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-    });
+    mostrarPagina('servicios');
 }
 </script>
 
