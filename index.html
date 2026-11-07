@@ -1,42 +1,57 @@
-F
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trovador El Turco | Trova, Música y Humor</title>
+
+<title>Trovador El Turco | Trovadores para Eventos en Cali y Colombia</title>
+
+<meta name="description" content="Contrata a Trovador El Turco para eventos, fiestas y celebraciones. Show de trova, música y humor en Cali, Valle del Cauca y toda Colombia. WhatsApp 3504008268.">
+
+<meta name="keywords" content="trovadores, trovador en Cali, trovadores en Cali, contratar trovador, trovadores para eventos, trova para fiestas, trovador en Colombia, humor para eventos, Trovador El Turco">
+
+<meta name="author" content="Trovador El Turco">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://trovadorelturco-cmyk.github.io/trovador-el-turco/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Trovador El Turco | Trova, Música y Humor">
+<meta property="og:description" content="Show de trova, música y humor para eventos en Cali, Valle del Cauca y toda Colombia. Contrataciones por WhatsApp.">
+<meta property="og:url" content="https://trovadorelturco-cmyk.github.io/trovador-el-turco/">
+<meta property="og:image" content="https://trovadorelturco-cmyk.github.io/trovador-el-turco/TURCO.png">
+
+<meta name="theme-color" content="#080808">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Trovador El Turco",
+  "alternateName": "El Turco",
+  "jobTitle": "Trovador y artista para eventos",
+  "description": "Artista de trova, música y humor para fiestas, eventos empresariales y celebraciones en Cali, Valle del Cauca y toda Colombia.",
+  "url": "https://trovadorelturco-cmyk.github.io/trovador-el-turco/",
+  "telephone": "+573504008268",
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Cali"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Valle del Cauca"
+    },
+    {
+      "@type": "Country",
+      "name": "Colombia"
+    }
+  ]
+}
+</script>
+
 <style>
-.galeria-videos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    max-width: 1100px;
-    margin: 30px auto;
-}
-
-.video-card {
-    width: 450px;
-    max-width: 100%;
-    background: #171717;
-    border: 1px solid #c9a227;
-    border-radius: 10px;
-    padding: 12px;
-}
-
-.video-card video {
-    width: 100%;
-    display: block;
-    border-radius: 7px;
-    background: #000;
-}
-
-.video-card p {
-    color: #d4af37;
-    margin-top: 12px;
-    font-weight: bold;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -108,7 +123,7 @@ section {
 }
 
 .hero {
-    min-height: 420px;
+    min-height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,14 +138,26 @@ section {
 }
 
 .hero p {
-    font-size: 20px;
-    line-height: 1.6;
+    font-size: 19px;
+    line-height: 1.7;
+    max-width: 850px;
+    margin: 8px auto;
+}
+
+.hero .subtitulo {
+    color: #d4af37;
+    font-size: 23px;
+    font-weight: bold;
 }
 
 h2.titulo {
     color: #d4af37;
     font-size: 32px;
     margin-bottom: 25px;
+}
+
+h3 {
+    color: #d4af37;
 }
 
 .biografia p,
@@ -197,6 +224,37 @@ h2.titulo {
     border-radius: 10px;
 }
 
+.galeria-videos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.video-card {
+    width: 450px;
+    max-width: 100%;
+    background: #171717;
+    border: 1px solid #c9a227;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.video-card video {
+    width: 100%;
+    display: block;
+    border-radius: 7px;
+    background: #000;
+}
+
+.video-card p {
+    color: #d4af37;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
 .contacto {
     background: #111;
 }
@@ -248,6 +306,10 @@ footer {
         font-size: 30px;
     }
 
+    .hero p {
+        font-size: 17px;
+    }
+
     nav {
         gap: 7px;
     }
@@ -268,22 +330,44 @@ footer {
 <body>
 
 <header>
-    <img src="./TURCO.png" alt="Logo Trovador El Turco" class="logo">
+    <img src="./TURCO.png" alt="Logo de Trovador El Turco" class="logo">
     <h1>TROVADOR EL TURCO</h1>
     <p>Trova, Música y Humor</p>
 </header>
 
-<nav>
-    <a href="#" onclick="mostrarPagina('inicio'); return false;">INICIO</a>
-    <a href="#" onclick="mostrarPagina('sobre'); return false;">SOBRE MÍ</a>
-    <a href="#" onclick="mostrarPagina('servicios'); return false;">SERVICIOS</a>
-    <a href="#" onclick="mostrarPagina('contacto'); return false;">CONTACTO</a>
+<nav aria-label="Navegación principal">
+    <a href="#inicio" onclick="mostrarPagina('inicio'); return false;">INICIO</a>
+    <a href="#sobre" onclick="mostrarPagina('sobre'); return false;">SOBRE MÍ</a>
+    <a href="#servicios" onclick="mostrarPagina('servicios'); return false;">SERVICIOS</a>
+    <a href="#contacto" onclick="mostrarPagina('contacto'); return false;">CONTACTO</a>
 </nav>
+
+<main>
 
 <!-- INICIO -->
 <section class="hero" id="inicio">
     <h2>TROVA, MÚSICA Y HUMOR</h2>
-    <p>Alegría, talento y sentimiento para tus eventos.</p>
+
+    <p class="subtitulo">
+        Trovador para eventos en Cali y toda Colombia
+    </p>
+
+    <p>
+        Lleva un espectáculo lleno de alegría, talento, improvisación
+        y buen humor a tus fiestas, reuniones familiares, eventos
+        empresariales, celebraciones y encuentros especiales.
+    </p>
+
+    <p>
+        Trovador El Turco ofrece presentaciones en Cali, el Valle del
+        Cauca y diferentes ciudades de Colombia.
+    </p>
+
+    <a class="whatsapp"
+       href="https://wa.me/573504008268?text=Hola%20Turco,%20quiero%20contratar%20un%20show%20para%20mi%20evento."
+       target="_blank" rel="noopener">
+       ¡CONTRATA TU SHOW!
+    </a>
 </section>
 
 <!-- SOBRE MÍ -->
@@ -302,11 +386,21 @@ footer {
         manejador del doble sentido, conservando siempre la línea
         del respeto con el show.
     </p>
+
+    <p>
+        Su talento y experiencia están al servicio de eventos y
+        celebraciones en Cali, el Valle del Cauca y toda Colombia.
+    </p>
 </section>
 
 <!-- SERVICIOS -->
 <section id="servicios" hidden>
-    <h2 class="titulo">MIS SERVICIOS</h2>
+    <h2 class="titulo">MIS SERVICIOS Y GALERÍA</h2>
+
+    <p>
+        Conoce fotografías y videos de las presentaciones de
+        Trovador El Turco.
+    </p>
 
     <div class="contenedor-servicios">
 
@@ -336,11 +430,11 @@ footer {
     <h2 class="titulo">GALERÍA DE FOTOS</h2>
 
     <div class="galeria">
-        <img src="./1000013506.jpg" alt="Foto de El Turco">
-        <img src="./1000014287.jpg" alt="Foto de El Turco">
-        <img src="./1000029305.jpg" alt="Foto de El Turco">
-        <img src="./1000029313.jpg" alt="Foto de El Turco">
-        <img src="./1000029381.jpg" alt="Foto de El Turco">
+        <img src="./1000013506.jpg" alt="Trovador El Turco en presentación">
+        <img src="./1000014287.jpg" alt="Presentación de Trovador El Turco">
+        <img src="./1000029305.jpg" alt="Show de trova de El Turco">
+        <img src="./1000029313.jpg" alt="Trovador El Turco en evento">
+        <img src="./1000029381.jpg" alt="El Turco compartiendo con el público">
     </div>
 
     <button class="boton-volver" type="button"
@@ -348,7 +442,6 @@ footer {
         VOLVER
     </button>
 </section>
-
 
 <!-- VIDEOS -->
 <section id="videos" hidden>
@@ -384,7 +477,13 @@ footer {
 <section class="contacto" id="contacto" hidden>
     <h2 class="titulo">¡CONTRATA AL TURCO!</h2>
 
-    <p>Lleva la trova, la música y el humor a tu próximo evento.</p>
+    <p>
+        Lleva la trova, la música y el humor a tu próximo evento.
+    </p>
+
+    <p>
+        Presentaciones en Cali, Valle del Cauca y toda Colombia.
+    </p>
 
     <p><strong>WhatsApp: 350 400 8268</strong></p>
 
@@ -395,14 +494,18 @@ footer {
     </a>
 </section>
 
+</main>
+
 <footer>
     <p>© 2026 Trovador El Turco</p>
     <p>Trova, Música y Humor</p>
+    <p>Presentaciones en Cali y toda Colombia</p>
 </footer>
 
 <a class="whatsapp-flotante"
    href="https://wa.me/573504008268"
-   target="_blank" rel="noopener">
+   target="_blank" rel="noopener"
+   aria-label="Contactar a Trovador El Turco por WhatsApp">
    WhatsApp
 </a>
 
